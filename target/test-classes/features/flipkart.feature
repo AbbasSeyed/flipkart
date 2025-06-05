@@ -10,7 +10,7 @@ Feature: order a product in online site
     And  click the product
     And click addcart the product
     Then I validate the outcomes
-    And close the browser
+   
     
     
     
