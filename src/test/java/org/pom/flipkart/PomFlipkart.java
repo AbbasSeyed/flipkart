@@ -27,6 +27,13 @@ public class PomFlipkart extends FlipkartBase{
 	@FindBy(xpath = "//button[text()='Add to cart']")
 	private WebElement addcart;
 	
+	@FindBy(xpath = "//button[text()='Buy Now']")
+	private WebElement buy;
+	
+	public WebElement getBuy() {
+		return buy;
+	}
+
 	public WebElement getSearchbar() {
 		return searchbar;
 	}

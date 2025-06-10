@@ -2,15 +2,24 @@
 @tag
 Feature: order a product in online site
 
-  @tag1
-  Scenario: product buying
+Background:
     Given lounch the browser
     And open the website
+
+  @tag1
+  Scenario: product buying
     When search the product "iphone 15"
     And  click the product
     And click addcart the product
     Then I validate the outcomes
-    Then close the browser from my end
+   
+    
+     Scenario: product buying
+    When search the product "iphone 15"
+    And  click the product
+    And click buy now the product
+    Then I validate the outcomes
+  
    
     
     

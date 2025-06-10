@@ -41,15 +41,18 @@ public class Flipkart extends FlipkartBase {
 		windowsHandle(1);
 		driver.findElement(By.xpath("//button[text()='Add to cart']")).click();
 	}
+	
+	@When("click buy now the product")
+	public void click_buy_now_the_product() {
+	   windowsHandle(1);
+	   click(pom.getBuy());
+	}
 
 	@Then("I validate the outcomes")
 	public void i_validate_the_outcomes() {
 	   System.out.println("validation");
 	}
 
-	@Then("close the browser")
-	public void close_the_browser() {
-	   closebrowser();
-	}
+	
 
 }
